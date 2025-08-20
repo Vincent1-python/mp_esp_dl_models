@@ -102,7 +102,7 @@ jobs:
           path: |
             ${{ env.ESP_IDF_DIR }}
             ~/.espressif/
-            ~/.cache/pip/*
+            ~/.cache/pip/
             ${{ env.MICROPYTHON_DIR }}
           key: mpy-${{ env.MPY_RELEASE }}
           restore-keys: mpy-
