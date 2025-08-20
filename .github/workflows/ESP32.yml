@@ -122,7 +122,7 @@ jobs:
           cd ${{ github.workspace }}/esp-dl
           sed -i '364s/switch (dst_img.pix_type) {/switch (dst_img.pix_type) {\
             case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/esp-dl/vision/image/dl_image_process.cpp
-          sed -i '686s/switch (dst_img.pix_type) {/switch (dst_img.pix_type) {\
+          sed -i '687s/switch (dst_img.pix_type) {/switch (dst_img.pix_type) {\
             case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/esp-dl/vision/image/dl_image_process.cpp
           cd ${{ github.workspace }}/boards/
           
