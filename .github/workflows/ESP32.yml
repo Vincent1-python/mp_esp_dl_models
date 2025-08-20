@@ -102,7 +102,7 @@ jobs:
           path: |
             ${{ env.ESP_IDF_DIR }}
             ~/.espressif/
-            ~/.cache/pip/
+            ~/.cache/pip/*
             ${{ env.MICROPYTHON_DIR }}
           key: mpy-${{ env.MPY_RELEASE }}
           restore-keys: mpy-
@@ -121,9 +121,9 @@ jobs:
           git clone https://github.com/cnadler86/mp_jpeg.git
           cd ${{ github.workspace }}/esp-dl
           sed -i '364s/switch (dst_img.pix_type) {/switch (dst_img.pix_type) {\
-            case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/vision/image/dl_image_process.cpp
+            case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/esp-dl/vision/image/dl_image_process.cpp
           sed -i '686s/switch (dst_img.pix_type) {/switch (dst_img.pix_type) {\
-            case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/vision/image/dl_image_process.cpp
+            case DL_IMAGE_PIX_TYPE_UNDEFINED: break;/' ${{ github.workspace }}/esp-dl/esp-dl/vision/image/dl_image_process.cpp
           cd ${{ github.workspace }}/boards/
           
           # Check if a variant is defined and adjust the idf.py command
