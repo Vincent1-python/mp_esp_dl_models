@@ -114,6 +114,7 @@ jobs:
 
       - name: Build MicroPython
         run: |
+          export CFLAGS="-Wno-error=switch"
           source ${{ env.ESP_IDF_DIR }}/export.sh
           cd ${{ github.workspace }} && cd ..
           git clone https://github.com/Vincent1-python/micropython-camera-API.git
