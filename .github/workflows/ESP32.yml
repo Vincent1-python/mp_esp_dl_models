@@ -82,12 +82,7 @@ jobs:
       fail-fast: false
       matrix:
         board:
-          - ESP32_GENERIC_S3-SPIRAM_OCT
-          - ESP32_GENERIC_S3-FLASH_4M
-          - ESP32_GENERIC_S3-FLASH_16M
-          - ESP32_GENERIC_S3-FLASH_16M@FREENOVE_ESP32S3_CAM
-          - ESP32_GENERIC_S3-FLASH_16M@DFRobot_ESP32S3
-          - ESP32_GENERIC_S3-SPIRAM_OCT@XIAO_ESP32S3
+          - ESP32_GENERIC_S3-SPIRAM_OCT@DFRobot_ESP32S3
           - ESP32_GENERIC_S3-SPIRAM_OCT@DFRobot_ESP32S3_AI
 
     steps:
