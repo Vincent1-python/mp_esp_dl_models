@@ -82,8 +82,8 @@ jobs:
       fail-fast: false
       matrix:
         board:
-          - ESP32_GENERIC_S3-SPIRAM_OCT@DFRobot_ESP32S3
-          - ESP32_GENERIC_S3-SPIRAM_OCT@DFRobot_ESP32S3_AI
+          - ESP32_GENERIC_S3-FLASH_16M@DFRobot_ESP32S3
+          - ESP32_GENERIC_S3-FLASH_16M@DFRobot_ESP32S3_AI
 
     steps:
       - name: Get MicroPython latest release
